@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit Runescape Scraper</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <body class="container">
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <h4 id="notes-title">Notes</h4>
+            <div class="modal-content" id="notes-display">
+                
+            </div>
+            
+            <div class="input-field col s4">
+                <input placeholder="New Note" id="note-text" type="text" class="validate">
+                <label for="new-note">New Note</label>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+            <div class="modal-footer">
+                <a id=submit-btn href="#!" class="modal-close waves-effect waves-green btn-flat">Submit Note</a>
+            </div>
+        </div>
+
+        <h3 class="header">RuneScrape - Saved Articles</h3>
+        <a href="/"><button>back to homepage</button></a>
+        <table id="results">
+            <thead>
+                <tr>
+                    <th id="Title">Title</th>
+                </tr>
+            </thead>
+            <tbody id="postbodies">
+
+            </tbody>
+        </table>
+        <script src="./savedpage.js"></script>
+    </body>
+</body>
+
+</html>
